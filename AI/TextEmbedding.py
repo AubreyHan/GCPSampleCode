@@ -1,5 +1,7 @@
 from vertexai.language_models import TextEmbeddingModel
+import vertexai
 
+vertexai.init(project='hy-auth-001')
 
 def text_embedding() -> list:
     """Text embedding with a Large Language Model."""
